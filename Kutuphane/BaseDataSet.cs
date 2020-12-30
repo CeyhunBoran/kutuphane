@@ -7,7 +7,7 @@ namespace Kutuphane
 {
     public class BaseDataSet
     {
-        public DateTime RegisterationTime { get; set; }
         public long Id { get; set; }
+        public DateTime RegisterationTime { get; set; }
     }
 }

@@ -6,18 +6,23 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Kutuphane;
+using Kutuphane.DTO;
 
 namespace Kutuphane.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BookController : ControllerBase
+    public class BooksController : ControllerBase
     {
         private readonly KutuphaneContext _context;
 
-        public BookController(KutuphaneContext context)
+        public BooksController(KutuphaneContext context)
         {
             _context = context;
+            if (!_context.Books.Any())
+            {
+                SeedCreate.GenerateSeedData(_context);
+            }
         }
 
         // GET: api/Books
@@ -45,14 +50,16 @@ namespace Kutuphane.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutBook(long id, Book book)
+        public async Task<IActionResult> PutBook(long id, AddBook book)
         {
-            if (id != book.Id)
-            {
-                return BadRequest();
-            }
+            
+            Book entity = await _context.Books.FindAsync(id);
 
-            _context.Entry(book).State = EntityState.Modified;
+            entity.Name = book.Name;
+            entity.Author = book.Author;
+            entity.NumberOfBooks = book.NumberOfBooks;
+
+            _context.Entry(entity).State = EntityState.Modified;
 
             try
             {
@@ -77,13 +84,19 @@ namespace Kutuphane.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Book>> PostBook(Book book)
+        public async Task<ActionResult<Book>> PostBook(AddBook book)
         {
-            book.RegisterationTime = DateTime.Now;
-            _context.Books.Add(book);
+            Book entity = new Book
+            {
+                Name = book.Name,
+                Author = book.Author,
+                NumberOfBooks = book.NumberOfBooks,
+                RegisterationTime = DateTime.Now
+            };
+            _context.Books.Add(entity);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetBook", new { id = book.Id }, book);
+            return CreatedAtAction(nameof(this.GetBook), new { id = entity.Id }, entity);
         }
 
         // DELETE: api/Books/5

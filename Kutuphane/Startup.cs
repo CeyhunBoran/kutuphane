@@ -28,7 +28,7 @@ namespace Kutuphane
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<KutuphaneContext>(opt =>
-                                               opt.UseInMemoryDatabase("Kutuphane"));
+                                               opt.UseInMemoryDatabase("Kutuphane") );
             services.AddControllers();
         }
 
