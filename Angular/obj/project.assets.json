@@ -180,7 +180,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tahsin Gül\\.nuget\\packages\\": {}
+    "C:\\Users\\Tahsin Gül\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -191,6 +192,9 @@
       "packagesPath": "C:\\Users\\Tahsin Gül\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Tahsin Gül\\Documents\\projeler\\kutuphane\\Angular\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\Tahsin Gül\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
