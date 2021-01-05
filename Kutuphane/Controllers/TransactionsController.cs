@@ -43,16 +43,24 @@ namespace Kutuphane.Controllers
 
         // GET: api/Transactions/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Transaction>> GetTransaction(long id)
+        public async Task<ActionResult> GetTransaction(long id)
         {
-            var transaction = await _context.Transactions.FindAsync(id);
-
+            var transaction = await _context.Transactions.Select(t => new {
+                Id = t.Id,
+                Book = new { Name = t.Book.Name },
+                Member = new { Name = t.Member.Name },
+                DueTime = t.DueTime,
+                BookId = t.BookId,
+                MemberId = t.MemberId,
+                ReceiveTime = t.ReceiveTime,
+                RegisterationTime = t.RegisterationTime
+            }).Where(t => t.Id == id).FirstOrDefaultAsync();
+            
             if (transaction == null)
             {
                 return NotFound();
             }
-
-            return transaction;
+            return Ok(transaction);
         }
 
         // PUT: api/Transactions/5
