@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Kutuphane;
-using Kutuphane.DTO;
+using Kutuphane.Data;
+using Kutuphane.Data.Entities;
+using Kutuphane.Data.Entities.DTO;
+using Kutuphane.Logic;
 
-namespace Kutuphane.Controllers
+namespace Kutuphane.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -19,10 +21,6 @@ namespace Kutuphane.Controllers
         public BooksController(KutuphaneContext context)
         {
             _context = context;
-            if (!_context.Books.Any())
-            {
-                SeedCreate.GenerateSeedData(_context);
-            }
         }
 
         // GET: api/Books

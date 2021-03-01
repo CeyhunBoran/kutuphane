@@ -1,35 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tahsin Gül\\Documents\\projeler\\kutuphane\\Kutuphane\\Kutuphane.csproj": {}
+    "C:\\Users\\ceybo\\source\\repos\\kutuphane\\Kutuphane\\Kutuphane.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tahsin Gül\\Documents\\projeler\\kutuphane\\Kutuphane\\Kutuphane.csproj": {
+    "C:\\Users\\ceybo\\source\\repos\\kutuphane\\Kutuphane\\Kutuphane.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tahsin Gül\\Documents\\projeler\\kutuphane\\Kutuphane\\Kutuphane.csproj",
+        "projectUniqueName": "C:\\Users\\ceybo\\source\\repos\\kutuphane\\Kutuphane\\Kutuphane.csproj",
         "projectName": "Kutuphane",
-        "projectPath": "C:\\Users\\Tahsin Gül\\Documents\\projeler\\kutuphane\\Kutuphane\\Kutuphane.csproj",
-        "packagesPath": "C:\\Users\\Tahsin Gül\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tahsin Gül\\Documents\\projeler\\kutuphane\\Kutuphane\\obj\\",
+        "projectPath": "C:\\Users\\ceybo\\source\\repos\\kutuphane\\Kutuphane\\Kutuphane.csproj",
+        "packagesPath": "C:\\Users\\ceybo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ceybo\\source\\repos\\kutuphane\\Kutuphane\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Tahsin Gül\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ceybo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -40,40 +37,22 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[5.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.InMemory": {
-              "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.1.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[3.1.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.1.10, )"
+              "version": "[5.0.3, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -94,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

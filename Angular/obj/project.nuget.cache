@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "lfCNzmHJeUI7RFHcCn6Nx5XOr7vRNX7cn7lpOpJQQ6l+NbFzqaxzuUPjpDWSp0H5fHUm0ngIGdXMcaV4PtKDcA==",
+  "dgSpecHash": "J9cHAs1pCfTXqVZKZHFedDhNponoIPjRNeJbEPtzybhHXhMWYAbmN+8ZHMPWUhDXM7NuyraTLifB3X9Ajj3Vgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tahsin Gül\\Documents\\projeler\\kutuphane\\Angular\\Angular.csproj",
+  "projectFilePath": "C:\\Users\\ceybo\\source\\repos\\kutuphane\\Angular\\Angular.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Tahsin Gül\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Tahsin Gül\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\ceybo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ceybo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

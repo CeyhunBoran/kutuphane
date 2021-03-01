@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kutuphane", "Kutuphane.csproj", "{FE718492-975C-4670-83FE-787635F914FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kutuphane.API", "Kutuphane.API.csproj", "{FE718492-975C-4670-83FE-787635F914FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular", "..\Angular\Angular.csproj", "{02F3D6D4-387D-4B64-A087-D8B5FDF72BBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Angular", "..\Angular\Angular.csproj", "{02F3D6D4-387D-4B64-A087-D8B5FDF72BBE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kutuphane.Data", "..\Kutuphane.Data\Kutuphane.Data.csproj", "{8D094B6F-1373-4FE5-B669-0667F558FF15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kutuphane.Logic", "..\Kutuphane.Logic\Kutuphane.Logic.csproj", "{7A391708-74D6-461C-9224-C249E0D3D6E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +24,14 @@ Global
 		{02F3D6D4-387D-4B64-A087-D8B5FDF72BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{02F3D6D4-387D-4B64-A087-D8B5FDF72BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02F3D6D4-387D-4B64-A087-D8B5FDF72BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D094B6F-1373-4FE5-B669-0667F558FF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D094B6F-1373-4FE5-B669-0667F558FF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D094B6F-1373-4FE5-B669-0667F558FF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D094B6F-1373-4FE5-B669-0667F558FF15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A391708-74D6-461C-9224-C249E0D3D6E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A391708-74D6-461C-9224-C249E0D3D6E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A391708-74D6-461C-9224-C249E0D3D6E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A391708-74D6-461C-9224-C249E0D3D6E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

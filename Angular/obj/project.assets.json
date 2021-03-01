@@ -180,23 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tahsin Gül\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\ceybo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tahsin Gül\\Documents\\projeler\\kutuphane\\Angular\\Angular.csproj",
+      "projectUniqueName": "C:\\Users\\ceybo\\Source\\Repos\\kutuphane\\Angular\\Angular.csproj",
       "projectName": "Angular",
-      "projectPath": "C:\\Users\\Tahsin Gül\\Documents\\projeler\\kutuphane\\Angular\\Angular.csproj",
-      "packagesPath": "C:\\Users\\Tahsin Gül\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tahsin Gül\\Documents\\projeler\\kutuphane\\Angular\\obj\\",
+      "projectPath": "C:\\Users\\ceybo\\Source\\Repos\\kutuphane\\Angular\\Angular.csproj",
+      "packagesPath": "C:\\Users\\ceybo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ceybo\\Source\\Repos\\kutuphane\\Angular\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Tahsin Gül\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ceybo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -239,7 +235,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,15 @@
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\bin\Debug\net5.0\Kutuphane.Data.deps.json
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\bin\Debug\net5.0\Kutuphane.Data.runtimeconfig.json
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\bin\Debug\net5.0\Kutuphane.Data.runtimeconfig.dev.json
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\bin\Debug\net5.0\Kutuphane.Data.dll
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\bin\Debug\net5.0\ref\Kutuphane.Data.dll
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\bin\Debug\net5.0\Kutuphane.Data.pdb
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\obj\Debug\net5.0\Kutuphane.Data.csprojAssemblyReference.cache
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\obj\Debug\net5.0\Kutuphane.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\obj\Debug\net5.0\Kutuphane.Data.AssemblyInfoInputs.cache
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\obj\Debug\net5.0\Kutuphane.Data.AssemblyInfo.cs
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\obj\Debug\net5.0\Kutuphane.Data.csproj.CoreCompileInputs.cache
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\obj\Debug\net5.0\Kutuphane.Data.dll
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\obj\Debug\net5.0\ref\Kutuphane.Data.dll
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\obj\Debug\net5.0\Kutuphane.Data.pdb
+C:\Users\ceybo\source\repos\kutuphane\Kutuphane.Data\obj\Debug\net5.0\Kutuphane.Data.genruntimeconfig.cache

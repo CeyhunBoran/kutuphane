@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Kutuphane.Data;
+using Kutuphane.Data.Entities;
+using Kutuphane.Data.Entities.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Kutuphane;
-using Kutuphane.DTO;
 
-namespace Kutuphane.Controllers
+namespace Kutuphane.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -21,8 +22,6 @@ namespace Kutuphane.Controllers
             _context = context;
             if (!_context.Members.Any())
             {
-                SeedCreate.GenerateSeedData(_context);
-                _context.SaveChanges();
 
             }
         }
