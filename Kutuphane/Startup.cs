@@ -6,6 +6,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Kutuphane.Data;
 using Kutuphane.Logic;
+using Kutuphane.Data.Services;
+using Kutuphane.Data.Helpers;
 
 namespace Kutuphane.API
 {
@@ -21,9 +23,12 @@ namespace Kutuphane.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<KutuphaneContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("Kutuphane.Data")));
-            services.AddScoped<DbContext>(provider => provider.GetService<KutuphaneContext>());
+            services.AddCors();
             services.AddControllers();
+            services.AddDbContext<KutuphaneContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("Kutuphane.Data")));
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+            services.AddScoped<DbContext>(provider => provider.GetService<KutuphaneContext>());
+            services.AddScoped<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +43,16 @@ namespace Kutuphane.API
 
             app.UseRouting();
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
+
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
+            app.UseMiddleware<JwtMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {
