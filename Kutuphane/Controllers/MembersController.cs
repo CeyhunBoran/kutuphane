@@ -59,6 +59,8 @@ namespace Kutuphane.API.Controllers
             entity.Adress = member.Adress;
             entity.Age = member.Age;
             entity.Name = member.Name;
+            entity.Username = member.Username;
+            entity.Password = member.Password;
 
             _context.Entry(entity).State = EntityState.Modified;
 
@@ -92,6 +94,8 @@ namespace Kutuphane.API.Controllers
                 Adress = member.Adress,
                 Age = member.Age,
                 Name = member.Name,
+                Username = member.Username,
+                Password = member.Password,
                 RegisterationTime = DateTime.Now
             };
             _context.Members.Add(entity);
