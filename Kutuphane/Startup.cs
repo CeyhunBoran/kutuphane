@@ -6,8 +6,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Kutuphane.Data;
 using Kutuphane.Logic;
-using Kutuphane.Data.Services;
-using Kutuphane.Data.Helpers;
+using Kutuphane.Logic.Services;
+using Kutuphane.Logic.Helpers;
 
 namespace Kutuphane.API
 {
