@@ -1,6 +1,6 @@
 ﻿using Kutuphane.Data.Entities;
-using Kutuphane.Data.Models;
-using Kutuphane.Data.Services;
+using Kutuphane.Data.Entities.DTO.Models;
+using Kutuphane.Logic.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
