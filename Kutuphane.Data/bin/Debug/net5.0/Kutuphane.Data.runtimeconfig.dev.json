@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\ceybo\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ceybo\\.nuget\\packages"
-    ]
-  }
-}
